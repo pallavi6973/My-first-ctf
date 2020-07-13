@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<script>
+function validation() {
+	if (document.getElementById('flag').value == "") {
+		alert('Enter a valid flag');
+		return false;
+	}
+	else if (document.getElementById('flag').value == "$ Got it $") {
+		alert('Hey!Got your flag');
+	}
+	else {
+		alert("Better Luck!Try Again")
+	}
+}  
+</script> 
+</head> 
+<body>
+	<form method="post" action="#" onsubmit="return validation()">
+	<label for="flag">Submit Your Flag:</label><br>
+    <input type="text" id="flag" name="flag"><br>
+    <input type="submit" value="submit">
+</form>
+</body>
+
+
+</html>
+
